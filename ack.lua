@@ -1,7 +1,7 @@
 -- $Id: ackermann.lua,v 1.5 2000/12/09 20:07:43 doug Exp $
 -- http://www.bagley.org/~doug/shootout/
 
-local function Ack(M, N)
+function Ack(M, N)
     if (M == 0) then
         return N + 1
     end
