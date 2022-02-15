@@ -12,5 +12,6 @@ function Ack(M, N)
 end
 
 N = tonumber((arg and arg[1])) or 3
-M = tonumber((arg and arg[2])) or 8
-print(string.format("Ack(%d, %d) = %d\n", N, M, Ack(N,M)))
+M = tonumber((arg and arg[2])) or 5
+print(Ack(N, M))
+-- print(string.format("Ack(%d, %d) = %d\n", N, M, Ack(N,M)))
