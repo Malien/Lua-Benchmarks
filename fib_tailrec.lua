@@ -9,4 +9,4 @@ function fib(n)
     return fib_rec(n, 1, 0)
 end
 
-print(fib(25))
+return fib(N)
