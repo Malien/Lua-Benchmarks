@@ -1,5 +1,4 @@
-local random, floor = math.random, math.floor
-floor = math.ifloor or floor
+local floor = floor or math.ifloor or math.floor
 
 function heapsort(n, ra)
     local j, i, rra
@@ -37,12 +36,4 @@ function heapsort(n, ra)
     end
 end
 
-local Num = tonumber((arg and arg[1])) or 4
-for i=1,Num do
-  local N = tonumber((arg and arg[2])) or 10000
-  local a = {}
-  for i=1,N do a[i] = random() end
-  heapsort(N, a)
-  for i=1,N-1 do assert(a[i] <= a[i+1]) end
-end
-
+heapsort(COUNT, TABLE)
